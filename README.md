@@ -5,4 +5,4 @@ It may be used to determinate traffic usage or for monitoring purpose.
 
 It is neccesaty to add a valid _TclRequestVerificationToken to the script in order to retrieve data.
 
-Tested with SwVersion HH132_FT_02.00_20
+Tested with SwVersion HH132_FT_02.00_20 on Telecom Itala branded HH132-V1.0
