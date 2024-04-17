@@ -4,8 +4,9 @@ function router($fname, $cpid)
     $headers = [
         "Referer: http://192.168.1.1/default.html",
         "Origin: http://192.168.1.1",
-        "_TclRequestVerificationKey: XXX",
-        "_TclRequestVerificationToken: XXX ADD TOKEN HERE XXX",
+        "Content-Type: application/json",
+        "_TclRequestVerificationKey: XXX", // placeholder, no need to add key
+        "_TclRequestVerificationToken: XXX", // replace XXX with the TclRequestVerificationToken
     ];
 
     $payload = [
@@ -39,6 +40,7 @@ function router($fname, $cpid)
 // router("PLAYLOAD", "ID");
 router("GetUsageSettings", "0");
 router("HeartBeat", "2.3");
+router("GetCurrentTime", "27.55");
 router("GetConnectionState", "88.1");
 router("GetApSystemInfo", "80.6");
 router("GetModemSystemInfo", "50.8");
@@ -48,6 +50,17 @@ router("GetModemStatus", "20.8");
 router("GetConnectedDeviceList", "82.5");
 router("GetLanPortInfo", "28.6");
 router("GetLanSettings", "53.2");
-router("GetWlanSettings", "40.7");
 router("GetWanSettings", "60.3");
+router("getDMZInfo", "4.8");
+router("GetSMSStorageState", "25.6");
+router("GetQosSettings", "98.4");
+
+// Wlan
+router("GetWlanStatistics", "99.7");
+router("GetWlanSettings", "40.7");
+router("GetWlanSupportMode", "99.8");
+
+// SIP
+router("GetSIPServerSettings", "98.3");
+router("GetSIPAccountSettings", "98.4");
 ?>
