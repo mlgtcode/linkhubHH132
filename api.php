@@ -63,4 +63,17 @@ router("GetWlanSupportMode", "99.8");
 // SIP
 router("GetSIPServerSettings", "98.3");
 router("GetSIPAccountSettings", "98.4");
+
+// Other
+router("GetUsageRecord", "98.4");
+router("GetConnectionSettings", "98.4");
+router("GetMacFilterSettings", "98.4");
+router("GetParentalSettingsrouter", "98.4");
+router("GetPortTriggering", "98.4");
+router("GetProfileList", "98.4");
+router("GetWPSConnectionState", "98.4");
+router("GetLanStatistics", "98.4");
+router("GetNetworkSettings", "98.4");
+router("GetNetworkInfo", "98.4");
+router("GetDdnsSettings", "98.4");
 ?>
